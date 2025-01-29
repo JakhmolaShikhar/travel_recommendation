@@ -4,25 +4,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Travel Bloom</title>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
   <nav>
     <h1>TravelBloom</h1>
     <ul>
       <li><a href="#home">Home</a></li>
-      <li><a href="./travel_aboutUs.html">About Us</a></li>
-      <li><a href="./travel_contactUs.html">Contact Us</a></li>
-      <li><input type="text" placeholder="Enter a destination"></li>
-      <li><button >Search</button></li>
+      <li><a href="#about_us">About Us</a></li>
+      <li><a href="#contactUs">Contact Us</a></li>
+      <li><input type="text" placeholder="Enter a destination" id="searchInput"></li>
+      <li><button id="searchbtn">Search</button></li>
+      <li><button id="clearbtn">Clear</button></li>
     </ul> 
-  </nav>
-  <div>
-    <h1>Explore Dream Destination</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-      Officiis, unde ratione dicta cum nisi dolorem atque perspiciatis 
-      quasi eveniet aspernatur alias iste praesentium. 
-      Quidem libero quas dolores voluptates, porro aut!</p>
+    <div id="dropdown">
+      <div class="dropdown-header"><button id="close-btn">X</button></div>
+      <div id="resultContainer">
+          
+      </div>
   </div>
-  
+  </nav>
+  <br>
+  <div class="main-section">
+    <div class="main" id="home">
+      <h1>Explore <br>Dream <br>Destination<br></h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
+        Officiis, unde ratione dicta cum nisi dolorem atque perspiciatis <br>
+        quasi eveniet aspernatur alias iste praesentium. <br>
+        Quidem libero quas dolores voluptates, porro aut!<br></p>
+    </div>
+  </div>
+  <br>
+  <div id="about_us" class="about_us">
+    <h2>About us</h2>
+    <p class="abouttxt">Welcome to Our Company! we are a team of passionate individuals <br>
+      dedicated to providing excellent services/products to our customers.<br>
+      Our mission is to <strong>provide the best experience</strong> for perople travelling to <br>
+      different destinations around the world.
+    </p>
+  </div>
+  <br>
+  <div class="contactUs" id="contactUs">
+    <h1>Contact Us</h1>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required /><br>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required /><br>
+    <label for="message">Message</label>
+    <textarea  id="message" name="message" rows="5" required ></textarea><br>
+    <button type="submit">Submit</button>
+  </div>
+
+  <script src="travel_recommendation.js"></script>
 </body>
 </html>
